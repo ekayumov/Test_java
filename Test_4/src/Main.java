@@ -2,14 +2,6 @@ import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.ArrayList;
-
-/*
- Шаги решения:
-  просуммируем все элемениы и найдем среднее значение, после округлим до целого значения
-  далее вычесляем разницу между средним значением и всеми числами
- просуммировав все полученные значение получим минимальное число ходов
-*/
-
 public class Main {
     public static void main(String[] args) throws IOException {
         String filePath = args[0];
@@ -31,4 +23,3 @@ public class Main {
 
     }
 }
-
