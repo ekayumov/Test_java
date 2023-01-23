@@ -20,15 +20,18 @@ public class Main {
             System.exit(0);
         }
 
-        do {
+        while (true) {
             i = i + m - 1;
 
+            if ((i % n) == 1) {
+                break;
+            }
             if (i % n == 0) {
                 result.append(n);
             } else {
                 result.append(i % n);
             }
-        } while ((i % n) != 1);
+        }
 
         System.out.print(result);
     }

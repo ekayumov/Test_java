@@ -30,11 +30,11 @@ public class Main {
             square_sum = (x0 - x1) * (x0 - x1) + (y0 - y1) * (y0 - y1);
 
             if(square_sum < r0 * r0) {
-                System.out.println(i + " - точка внутри");
+                System.out.println(1);
             } else if(square_sum == r0 * r0) {
-                System.out.println(i + " - точка лежит на окружности");
+                System.out.println(0);
             } else {
-                System.out.println(i + " - точка снаружи");
+                System.out.println(2);
             }
         }
     }
