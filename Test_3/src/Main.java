@@ -13,8 +13,8 @@ public class Main {
         JSONParser testsPar = new JSONParser();
         JSONParser valuesPar = new JSONParser();
         // читаем "tests.json" "values.json"
-        try(FileReader testsR = new FileReader("tests.json");
-            FileReader valuesR = new FileReader("values.json")){
+        try(FileReader testsR = new FileReader(args[0]);
+            FileReader valuesR = new FileReader(args[1])){
 
             JSONObject testsObj = (JSONObject) testsPar.parse(testsR);
             JSONObject valuesObj = (JSONObject) valuesPar.parse(valuesR);
